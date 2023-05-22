@@ -1,0 +1,77 @@
+.card {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translate(5px, 5px);
+  border: 2px solid #4caf50;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(25px);
+}
+
+.card .image {
+  height: 200px;
+  background-image: url("eyelash-glue.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+}
+
+.card-content {
+  text-align: center;
+}
+
+.vat-free {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.best-value {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.buy-now {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.buy-now:hover {
+  transform: translate(5px, 5px);
+  border: 2px solid gold;
+  background-color: lime;
+  backdrop-filter: blur(100px);
+}
+
+.availability {
+  font-size: 14px;
+  margin-top: 10px;
+}
