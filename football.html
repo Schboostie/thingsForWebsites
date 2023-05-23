@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Champions League Teams</title>
+  <style>
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="teamGrid" class="card-grid"></div>
