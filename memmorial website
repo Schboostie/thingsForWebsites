@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>In Loving Memory</title>
+  
+  <style>
+  <!--Shahid's styling - pink theme -->
+  
+  
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #FEE9F1;
+}
+
+h1 {
+  text-align: center;
+  color: #FF69B4;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.image {
+  text-align: center;
+}
+
+.caption {
+  font-style: italic;
+  color: #FF69B4;
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 20px;
+  color: #333333;
+}
+
+.quote {
+  font-style: italic;
+  color: #FF69B4;
+  margin-top: 20px;
+}
+
+.signature {
+  text-align: right;
+  margin-top: 20px;
+  color: #333333;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #999999;
+}
+
+  
+  
+  <!--Shahid's Grid---->
+     .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  
+  </style>
+
+</head>
+<body>
+  <h1>In Loving Memory</h1>
+
+  <div class="container">
+    <div class="content">
+      <div class="image">
+        <img src="your_image.jpg" alt="Rememberance Image">
+        <div class="caption">Caption for the image</div>
+      </div>
+
+      <div class="description">
+        <h2>Remembering [Name]</h2>
+        <p>Born: [Date of Birth] - Passed Away: [Date of Passing]</p>
+        <p>[Description or biography of the person]</p>
+      </div>
+
+      <div class="quote">
+        <p>"[Quote or meaningful message]"</p>
+      </div>
+
+
+<div class="grid">
+    <div class="card">
+      <img src="image1.jpg" alt="Card Image 1">
+      <h3>Card Title 1</h3>
+      <p>Card description goes here.</p>
+    </div>
+    <div class="card">
+      <img src="image2.jpg" alt="Card Image 2">
+      <h3>Card Title 2</h3>
+      <p>Card description goes here.</p>
+    </div>
+    <div class="card">
+      <img src="image3.jpg" alt="Card Image 3">
+      <h3>Card Title 3</h3>
+      <p>Card description goes here.</p>
+    </div>
+    <!-- Add more cards as needed -->
+       <div class="card">
+      <img src="image3.jpg" alt="Card Image 3">
+      <h3>Card Title 3</h3>
+      <p>Card description goes here.</p>
+    </div>   <div class="card">
+      <img src="image3.jpg" alt="Card Image 3">
+      <h3>Card Title 3</h3>
+      <p>Card description goes here.</p>
+    </div>   <div class="card">
+      <img src="image3.jpg" alt="Card Image 3">
+      <h3>Card Title 3</h3>
+      <p>Card description goes here.</p>
+    </div>
+  </div>
+      <div class="signature">
+        <p>Sincerely,</p>
+        <p>[Your Name]</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© [Year] [Your Name]. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
