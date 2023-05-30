@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Gallery with CSS Grid</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 5px;
+    }
+    .gallery img{
+      width: 100%;
+      height: auto;
+     ;
+    }
+    .gallery .img-even{
+      width: 100%;
+      height: auto;
+      opacity:0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img class = "img-even" src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 1">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 2">
+    <img class = "img-even"src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 3">  <img src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+    <img class = "img-even"src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 4">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+   
+ <img class = "img-even"src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+ 
+   <img src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+ 
+ <img class = "img-even" src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+ 
+ <img src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5"> 
+ 
+ <img class = "img-even"src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+ 
+ <img src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+ 
+ <img class = "img-even" src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5"> 
+ 
+ <img src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5">
+ 
+  <img class = "img-even" src="https://tse1.mm.bing.net/th?id=OIP.sI8NR0IBUTcTqM7RQcnGWQHaEX&amp;pid=Api&amp;rs=1&amp;c=1&amp;qlt=95&amp;w=167&amp;h=98" alt="Image 5"> 
+</body>
+</html>
