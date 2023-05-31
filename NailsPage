@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar with JavaScript</title>
+ <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+  
+
+* {
+    box-sizing: border-box;
+}
+
+.heading{
+  display:flex;
+  justify-content: center;
+}
+
+
+ h1 {
+      font-family: 'Pacifico', cursive;
+      font-size:100px;
+      color: #FF69B4;
+      transition: transform 0.1s ease;
+    }
+
+    h1:hover {
+      transform: scale(1.1);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    main{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: url('background-image.jpg') center/cover no-repeat fixed;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav {
+      background-color: pink;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: flex;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+ a < li:hover {
+      background-color: purple;
+    }
+
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex-basis: 300px;
+  margin: 10px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.1s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+   transition: transform 0.1s ease;
+    overflow: hidden;
+}
+
+.card img:hover {
+      transform: scale(1.5);
+       overflow: hidden;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul id="navbar">
+      <li class ="active"><a href="#">Home</a></li>
+      <li class ="inactive"><a href="#">About</a></li>
+      <li class ="inactive"><a href="#">Services</a></li>
+      <li class ="inactive"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br><br><br><br><br><br><br>
+  <main>
+  <h1 class="heading">
+  Super Nails!
+  </h1>
+  
+    <div class="gallery-container">
+    <div class="gallery">
+      <div class="card">
+        <img src="https://www.instyle.com/thmb/PtV-_aHOuYp38RP6eUkoZhU1tpM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/061421_nail_extensions_lead-aa1a929279324af4b2d9f1ef2848408f.jpg" alt="Image 1">
+      </div>
+      <div class="card">
+        <img src="https://www.instyle.com/thmb/PtV-_aHOuYp38RP6eUkoZhU1tpM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/061421_nail_extensions_lead-aa1a929279324af4b2d9f1ef2848408f.jpg" alt="Image 2">
+        <h3>
+        Love your nails
+        </h3>
+        <p>
+        Great Prices
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://www.instyle.com/thmb/PtV-_aHOuYp38RP6eUkoZhU1tpM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/061421_nail_extensions_lead-aa1a929279324af4b2d9f1ef2848408f.jpg" alt="Image 3">
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+  </main>
+
+  <script>
+    // Add the 'active' class to the clicked navigation item
+    var navbar = document.getElementById("navbar");
+    var links = navbar.getElementsByTagName("a");
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+</body>
+</html>
