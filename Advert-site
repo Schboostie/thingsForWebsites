@@ -1,0 +1,218 @@
+
+
+
+<style>
+img{
+  width:300px
+}
+
+
+.parallax-container {
+  height: 500px; /* Adjust the height as desired */
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.booksy.com/static/live/covers/nail_salons.jpg'); /* Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; /* Adjust the opacity as desired */
+  transform: translateZ(0);
+}
+
+.parallax-layer h1 {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 200px; /* Adjust the margin as desired */
+}
+
+.parallax-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as desired */
+  z-index: -1;
+}
+
+.parallax-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); /* Adjust the gradient colors and opacity as desired */
+  z-index: -1;
+}
+
+.parallax-layer {
+  transform: translateZ(0);
+  animation: parallaxAnimation 10s infinite linear; /* Adjust the animation duration as desired */
+}
+
+@keyframes parallaxAnimation {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translateZ(-100px); /* Adjust the translateZ value to control the depth of the effect */
+  }
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section {
+  width: 300px; /* Adjust the width as desired */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 24px;
+}
+
+.section p {
+  font-size: 14px;
+  color: #666666;
+}
+
+
+/*The next part of the project */
+
+.grid-container-two {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.image-two {
+  flex: 1;
+  text-align: right;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.content-two {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #666666;
+}
+
+
+<style>
+
+<div class="parallax-container">
+  <div class="parallax-layer">
+    <h1>Welcome to the Parallax Effect!</h1>
+  </div>
+</div>
+
+
+<!-This is the grid that we now need to read -->
+
+<div class="grid-container">
+  <div class="section">
+    <h2>Section 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="section">
+    <h2>Section 2</h2>
+    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="section">
+    <h2>Section 3</h2>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="section">
+    <h2>Section 4</h2>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+</div>
+
+<!--next section -->
+
+<div class="grid-container">
+  <div class="section">
+    <div class="image">
+      <img src="https://static.booksy.com/static/live/covers/nail_salons.jpg" alt="Image 1">
+    </div>
+    <div class="content">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="image">
+      <img src="https://static.booksy.com/static/live/covers/nail_salons.jpg" alt="Image 2">
+    </div>
+    <div class="content">
+      <h2>Section 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</div>
+<!--New section -->
+
+<div class="grid-container-two">
+  <div class="section-two">
+    <div class="image-two">
+      <img src="https://static.booksy.com/static/live/covers/nail_salons.jpg" alt="Image 1">
+    </div>
+    <div class="content">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  
+  <div class="section-two">
+    <div class="image">
+      <img src="https://static.booksy.com/static/live/covers/nail_salons.jpg" alt="Image 2">
+    </div>
+    <div class="content-two">
+      <h2>Section 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
