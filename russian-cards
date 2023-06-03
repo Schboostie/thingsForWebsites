@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .card {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .card.clicked .english {
+      display: block;
+    }
+    
+    .card.clicked .russian {
+      display: none;
+    }
+    
+    .english {
+      display: none;
+      flex-direction:row;
+    }
+    
+    #cardContainer{
+       display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-gap:10px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+
+  <div id="cardContainer"></div>
+  
+  </div>
+
+  <script>
+    const wordTranslations = {
+      apple: "яблоко",
+      banana: "банан",
+      carrot: "морковь",
+      dog: "собака",
+      elephant: "слон",
+      flower: "цветок",
+      guitar: "гитара",
+      house: "дом",
+      island: "остров",
+      jungle: "джунгли",
+      kangaroo: "кенгуру",
+      lemon: "лимон",
+      mountain: "гора",
+      nest: "гнездо",
+      ocean: "океан",
+      piano: "пианино",
+      queen: "королева",
+      river: "река",
+      sun: "солнце",
+      tiger: "тигр",
+      umbrella: "зонт",
+      violet: "фиолетовый",
+      whale: "кит",
+      xylophone: "ксилофон",
+      zebra: "зебра"
+    };
+
+    const cardContainer = document.getElementById('cardContainer');
+
+    for (const word in wordTranslations) {
+      const russianTranslation = wordTranslations[word];
+      const englishTranslation = word;
+      
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.onclick = function() {
+        toggleTranslation(this);
+      };
+
+      const russianDiv = document.createElement('div');
+      russianDiv.className = 'russian';
+      russianDiv.textContent = russianTranslation;
+
+      const englishDiv = document.createElement('div');
+      englishDiv.className = 'english';
+      englishDiv.textContent = englishTranslation;
+
+      card.appendChild(russianDiv);
+      card.appendChild(englishDiv);
+      
+      cardContainer.appendChild(card);
+    }
+
+    function toggleTranslation(card) {
+      card.classList.toggle('clicked');
+    }
+  </script>
+</body>
+</html>
