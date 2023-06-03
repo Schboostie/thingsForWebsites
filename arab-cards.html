@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Cards</title>
+  <style>
+    .card {
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card .translation {
+      display: none;
+      font-weight: bold;
+    }
+
+    .card .qa {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .card .answer {
+      display: none;
+    }
+  </style>
+  <script>
+    function toggleTranslation(cardId) {
+      var translation = document.getElementById(cardId + "-translation");
+      translation.style.display = translation.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleAnswer(cardId) {
+      var answer = document.getElementById(cardId + "-answer");
+      answer.style.display = answer.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <div class="card" id="card1">
+    <div class="word">السلام</div>
+    <div class="translation" id="card1-translation">Peace</div>
+    <div class="qa" onclick="toggleTranslation('card1')">Show Translation</div>
+    <div class="question" onclick="toggleAnswer('card1')">What does it mean?</div>
+    <div class="answer" id="card1-answer">It means "Peace".</div>
+  </div>
+
+  <div class="card" id="card2">
+    <div class="word">ماء</div>
+    <div class="translation" id="card2-translation">Water</div>
+    <div class="qa" onclick="toggleTranslation('card2')">Show Translation</div>
+    <div class="question" onclick="toggleAnswer('card2')">What does it mean?</div>
+    <div class="answer" id="card2-answer">It means "Water".</div>
+  </div>
+  
+  
+
+  <!-- Add more cards here -->
+  
+  
+  <body>
+  <div id="card-container"></div>
+</body>
+
+</body>
+</html>
