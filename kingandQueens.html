@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Monarchs Cards</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+     /
+    }
+    
+    .fact {
+      display: none;
+      font-family: 'cursive';
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    function toggleFact(card) {
+      const factElement = card.querySelector('.fact');
+      factElement.style.display = factElement.style.display === 'none' ? 'flex' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="card" onclick="toggleFact(this)">
+      <div class="name">Henry VIII</div>
+      <br>
+      <div class="fact">Henry VIII had six wives and is known for the English Reformation.</div>
+    </div>
+    
+    <div class="card" onclick="toggleFact(this)">
+      <div class="name">Elizabeth I</div>
+      <br>
+      <div class="fact">Elizabeth I was the last monarch of the Tudor dynasty and is considered one of England's greatest rulers.</div>
+    </div>
+    
+    <!-- Add more cards for other monarchs here -->
+    
+  </div>
+</body>
+</html>
