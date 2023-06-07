@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Quran Surah Facts</title>
+    <style>
+      table {
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Quran Surah Facts</h1>
+    <div id="container">
+      <table>
+
+        <thead>
+          <tr>
+            <th>Surah Name</th>
+            <th>Order</th>
+            <th>Revelation Type</th>
+            <th>Verses</th>
+            <th>Translated Name</th>
+            <th>Significance</th>
+          </tr>
+        </thead>
+        <tbody id="surahFactsTable">
+          <!-- JavaScript will dynamically populate the table here -->
+        </tbody>
+      </table>
+    </div>
+    <script>
+      // JavaScript code to populate the table dynamically
+      const surahFacts = [{
+          surahName: "Al-Fatiha",
+          order: 1,
+          revelationType: "Meccan",
+          verses: 7,
+          translatedName: "The Opening",
+          significance: "The most important surah in the Quran, also known as the Umm al-Quran (Mother of the Quran).",
+        },
+        {
+          surahName: "Al-Baqarah",
+          order: 2,
+          revelationType: "Medinan",
+          verses: 286,
+          translatedName: "The Cow",
+          significance: "The longest surah in the Quran, covering various topics like law, guidance, and stories.",
+        },
+        {
+          surahName: "Al-Imran",
+          order: 3,
+          revelationType: "Medinan",
+          verses: 200,
+          translatedName: "The Family of Imran",
+          significance: "Mentions the family of Imran, including Maryam (Mary) and the birth of Prophet Isa (Jesus).",
+        },
+        // Add more surahs here
+        {
+          surahName: "An-Nisa",
+          order: 4,
+          revelationType: "Medinan",
+          verses: 176,
+          translatedName: "The Women",
+          significance: "Highlights the rights and responsibilities of women in society, among other topics.",
+        },
+        {
+          surahName: "Al-Ma'idah",
+          order: 5,
+          revelationType: "Medinan",
+          verses: 120,
+          translatedName: "The Table Spread",
+          significance: "Contains laws regarding dietary restrictions, permissible food, and the story of the disciples.",
+        },
+        {
+          surahName: "Al-An'am",
+          order: 6,
+          revelationType: "Meccan",
+          verses: 165,
+          translatedName: "The Cattle",
+          significance: "Discusses the concept of monotheism, prophets, and the accountability of individuals.",
+        },
+        {
+          surahName: "Al-A'raf",
+          order: 7,
+          revelationType: "Meccan",
+          verses: 206,
+          translatedName: "The Heights",
+          significance: "Narrates stories of past nations and their prophets, emphasizing the importance of guidance.",
+        },
+        {
+          surahName: "Al-Anfal",
+          order: 8,
+          revelationType: "Medinan",
+          verses: 75,
+          translatedName: "The Spoils of War",
+          significance: "Deals with the Battle of Badr and the distribution of war booty according to Islamic law.",
+        },
+        {
+          surahName: "Al-Tawbah",
+          order: 9,
+          revelationType: "Medinan",
+          verses: 129,
+          translatedName: "The Repentance",
+          significance: "Emphasizes the importance of seeking forgiveness and repentance from God.",
+        },
+        {
+          surahName: "Yunus",
+          order: 10,
+          revelationType: "Meccan",
+          verses: 109,
+          translatedName: "Jonah",
+          significance: "Portrays the story of the Prophet Jonah (Yunus) and his trials in calling people to God.",
+        },
+        // Add more surahs here
+      ];
+
+      const tableBody = document.getElementById("surahFactsTable");
+
+      // Loop through the surah facts and create table rows
+      surahFacts.forEach((surah) => {
+        const row = document.createElement("tr");
+
+        // Create table cells and populate them with surah facts
+        const surahNameCell = document.createElement("td");
+        surahNameCell.textContent = surah.surahName;
+        row.appendChild(surahNameCell);
+
+        const orderCell = document.createElement("td");
+        orderCell.textContent = surah.order;
+        row.appendChild(orderCell);
+
+        const revelationTypeCell = document.createElement("td");
+        revelationTypeCell.textContent = surah.revelationType;
+        row.appendChild(revelationTypeCell);
+
+        const versesCell = document.createElement("td");
+        versesCell.textContent = surah.verses;
+        row.appendChild(versesCell);
+
+        const translatedNameCell = document.createElement("td");
+        translatedNameCell.textContent = surah.translatedName;
+        row.appendChild(translatedNameCell);
+
+        const significanceCell = document.createElement("td");
+        significanceCell.textContent = surah.significance;
+        row.appendChild(significanceCell);
+
+        // Append the row to the table body
+        tableBody.appendChild(row);
+      });
+
+    </script>
+  </body>
+
+</html>
