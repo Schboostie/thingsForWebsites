@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: 'Lucida Handwriting', cursive;
+      
+    }
+    
+   .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+  
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      font-size:30px;
+      border-radius: 10px;
+      border: 3px solid pink;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+       
+    }
+
+    h2 {
+      text-align: center;
+      color: #fbc0cb;
+      font-size:40px;
+      margin-bottom: 20px;
+      font-weight:bold;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: gold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 3px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      font-family: 'Lucida Handwriting', cursive;
+    }
+
+    select {
+      background-color: #f8f8f8;
+      opacity:0.2;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    input[type="submit"] {
+      background-color: #ffd700;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: 'Lucida Handwriting', cursive;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #cca300;
+    }
+    
+    .heading-pic{
+      width:100px;
+    }
+    flexy-box{
+      display:flex;
+      flex-direction:row-reverse;
+      align-items:center;
+      justify-content:center;
+    }
+  </style>
+</head>
+<body>
+<div class="background-container">
+  <img class="background-image" src="https://images.pexels.com/photos/1024982/pexels-photo-1024982.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="Background Image">
+</div>
+<div class="form-container">
+  <form action="/rsvp" method="post">
+       <div class="flexy-box">
+    <img src="https://sp.yimg.com/ib/th?id=OIP.BXyFX5RFen4Ihae4LpFYagHaHa&amp;pid=Api&amp;w=148&amp;h=148&amp;c=7&amp;dpr=2&amp;rs=1" class="heading-pic">
+ 
+    
+    </div>
+    <h2>Wedding RSVP</h2>
+  
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="guest_name" placeholder="Enter your full name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="guest_email" placeholder="Enter your email" required>
+
+    <label for="attendance">Will you attend?</label>
+    <select id="attendance" name="attendance" required>
+      <option value="">-- Select --</option>
+      <option value="yes">Yes, I will attend</option>
+      <option value="no">No, I cannot attend</option>
+    </select>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guest_count" min="1" max="10" required>
+
+    <label for="message">Additional Message:</label>
+    <textarea id="message" name="message" placeholder="Leave a message for the couple"></textarea>
+
+    <input type="submit" value="Submit RSVP">
+  </form>
+  </div>
+  <div class="footer">&copy; 2023 Kristina Meskyte. All rights reserved</div>
+</body>
+</html>
