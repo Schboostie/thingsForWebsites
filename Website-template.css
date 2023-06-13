@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* Fonts */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Colors */
+body {
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.jumbotron {
+  background-color: #f8f8f8;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.card-title {
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-primary:hover {
+  background-color: #ffca2d;
+  border-color: #ffca2d;
+}
+
+/* Custom Styles */
+.container {
+  margin-top: 30px;
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.row .col-md-6:nth-child(odd) {
+  background-color: #fff;
+}
+
+.row .col-md-6:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
